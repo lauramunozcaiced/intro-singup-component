@@ -1,0 +1,18 @@
+#attribution{
+    padding: $padding $padding*2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include mq('st'){
+        position: relative;
+    }
+    h6{
+        font-family: $font;
+        font-size: $h6;
+        color: $white;
+    }
+   
+    a, i{
+        color: $purple-hover;
+    }
+}
