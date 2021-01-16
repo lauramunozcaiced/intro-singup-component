@@ -23,7 +23,7 @@
     justify-content: space-between;
 }
 .store_block tr.wc-block-cart-items__row td{
-    border: none;
+    border-width: 0!important;
 }
 
 .store_block tr.wc-block-cart-items__row .wc-block-cart-item__image img{
