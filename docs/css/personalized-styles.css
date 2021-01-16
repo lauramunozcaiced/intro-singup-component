@@ -30,3 +30,10 @@
 	width: auto!important;
 	height:150px!important;
 }
+
+.store_block h3{
+	margin: 0;
+}
+.store_block{
+	padding-top: 1.5rem;
+}
