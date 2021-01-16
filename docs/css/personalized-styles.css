@@ -22,7 +22,7 @@
     border-top: 1px solid gray;
     justify-content: space-between;
 }
-.store_block tr.wc-block-cart-items__row td{
+.store_block tr.wc-block-cart-items__row td:after{
     border-width: 0!important;
 }
 
