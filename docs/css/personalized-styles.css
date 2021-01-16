@@ -25,3 +25,8 @@
 .store_block tr.wc-block-cart-items__row td{
     border: none;
 }
+
+.store_block tr.wc-block-cart-items__row .wc-block-cart-item__image img{
+	width: auto!important;
+	height:150px!important;
+}
