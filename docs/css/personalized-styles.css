@@ -1,0 +1,18 @@
+.wcfmmp-product-geolocate-wrapper .wcfmmp-product-list-map{
+	z-index: 0!important;
+}
+
+.elementor-menu-cart__container .widget_shopping_cart_content{
+	display: flex;
+    flex-direction: column;
+    height: 84%;
+    justify-content: space-between;
+}
+.elementor-menu-cart__container .widget_shopping_cart_content .elementor-menu-cart__products{
+	overflow: auto;
+	height: 75%;
+}
+
+.elementor-menu-cart__close-button {
+	align-self: flex-start;
+}
