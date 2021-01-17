@@ -31,6 +31,10 @@
 	height:150px!important;
 }
 
+.store_block tr.wc-block-cart-items__row .wc-block-cart-item__product{
+	width: 320px;
+}
+
 .store_block h3{
 	margin: 0;
 }
