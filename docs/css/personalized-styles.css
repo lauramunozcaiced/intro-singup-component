@@ -34,7 +34,7 @@
 .store_block tr.wc-block-cart-items__row .wc-block-cart-item__product{
 	width: 320px;
 }
-.store_block tr.wc-block-cart-items__row .wc-block-cart-item__quantity{
+.store_block tr.wc-block-cart-items__row .wc-block-cart-item__quantity, .store_block tr.wc-block-cart-items__row .wc-block-cart-item__total{
 	width: 120px;
 	max-width: 120px;
 }
