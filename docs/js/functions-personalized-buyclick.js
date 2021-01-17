@@ -39,8 +39,7 @@ jQuery('document').ready(function(){
 			  smalltext = smalltext.replace(" ","");
 			  longtext = longtext.replace(" ","");
 			 smalltext = smalltext.replace(" ","");
-			  console.log(longtext);
-			  console.log(smalltext);
+			 
 			  if(longtext.includes(smalltext) == true){
 				store =   jQuery(this).find(hidden_product_title).text();
 				
@@ -52,7 +51,6 @@ jQuery('document').ready(function(){
 				id_store = jQuery(this).attr('id');
 			}
 		});
-		console.log(id_store);
 		
 		jQuery(this).appendTo('#'+id_store);
 		jQuery('.store_block').css('width',jQuery('.wp-block-woocommerce-cart.alignfull table.wc-block-cart-items tbody').width());
