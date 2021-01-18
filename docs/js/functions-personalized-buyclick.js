@@ -1,6 +1,6 @@
 jQuery('document').ready(function(){
 	
-	
+	jQuery('.owp-cart-overlay').append('<div class="message_add_product"><h3>Se ha agregado un producto en el carrito</h3></div>');
 	jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').each(function(){
 		var text = jQuery(this).text().replace('<span class="wcpdf-currency-symbol">','');
 		text = text.replace('</span>','');
@@ -82,7 +82,6 @@ jQuery('document').ready(function(){
 		
 		if(jQuery('.owp-cart-overlay').length){
 			if(jQuery('.owp-cart-overlay').css('display') == 'block'){
-				jQuery('.owp-cart-overlay').append('<div class="message_add_product"><h3>Se ha agregado un producto en el carrito</h3></div>');
 				setTimeout(function(){
 					jQuery('.owp-cart-overlay').css('display','none');	
 				}, 3000)
