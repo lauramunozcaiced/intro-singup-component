@@ -19,7 +19,7 @@
 .store_block tr.wc-block-cart-items__row{
 	width: 100%;
     display: flex;
-    border-top: 1px solid gray;
+    border-top: 1px solid #c5c5c5;
     justify-content: space-between;
 }
 .store_block tr.wc-block-cart-items__row td:after, .store_block .wc-blocks-components-panel.has-border:after, .store_block .wc-block-components-radio-control__option:after{
@@ -39,8 +39,9 @@
 	max-width: 120px;
 }
 
-.store_block h3{
+.store_block h3.store_title{
 	margin: 0;
+	font-weight: 700;
 }
 .store_block{
 	padding-top: 1.5rem;
