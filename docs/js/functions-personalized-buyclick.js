@@ -84,7 +84,7 @@ jQuery('document').ready(function(){
 			if(jQuery('.owp-cart-overlay').css('display') == 'block'){
 				setTimeout(function(){
 					jQuery('.owp-cart-overlay').css('display','none');	
-				}, 3000)
+				}, 5000)
 			}
 		}
 		
