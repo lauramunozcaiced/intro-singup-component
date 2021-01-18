@@ -13,6 +13,26 @@
 	height: 75%;
 }
 
+	/* width */
+.elementor-menu-cart__container .widget_shopping_cart_content .elementor-menu-cart__products::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.elementor-menu-cart__container .widget_shopping_cart_content .elementor-menu-cart__products::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.elementor-menu-cart__container .widget_shopping_cart_content .elementor-menu-cart__products::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.elementor-menu-cart__container .widget_shopping_cart_content .elementor-menu-cart__products::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .elementor-menu-cart__close-button {
 	align-self: flex-start!important;
 }
