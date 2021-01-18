@@ -140,6 +140,6 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 	border-bottom: 1px solid #c5c5c5!important;
 }
 
-.elementor-menu-cart__main .elementor-menu-cart__footer-buttons{
-	background-color: black;
+.elementor-menu-cart__main .elementor-menu-cart__footer-buttons a{
+	background-color: black!important;
 }
