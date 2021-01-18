@@ -134,7 +134,7 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 }
 
 .elementor-menu-cart__main .elementor-menu-cart__product-remove{
-	border-color: 2px solid #d4d4d4!important;
+	border: 2px solid #d4d4d4!important;
 }
 
 .elementor-menu-cart__main .elementor-menu-cart__product woocommerce-cart-form__cart-item.cart_item{
