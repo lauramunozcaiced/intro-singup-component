@@ -77,6 +77,6 @@
 	opacity: 0;
 }
 
-.store_blocks .wc-block-components-title.wc-block-components-shipping-rates-control__package-title, .store_blocks ul.wc-block-components-shipping-rates-control__package-items{
+.store_block .wc-block-components-title.wc-block-components-shipping-rates-control__package-title, .store_block ul.wc-block-components-shipping-rates-control__package-items{
 	display: none;
 }
