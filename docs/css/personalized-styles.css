@@ -46,3 +46,12 @@
 	padding-top: 1.5rem;
 }
 
+.wc-block-components-main.wc-block-cart__main{
+	height: 60vh;
+	overflow: auto;
+}
+
+.wc-block-components-sidebar-layout.wc-block-cart{
+	transition: .5s all;
+	opacity: 0;
+}
