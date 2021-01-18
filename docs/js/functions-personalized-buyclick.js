@@ -86,8 +86,6 @@ jQuery('document').ready(function(){
 				jQuery('.store_block').each(function(){
 					var longtext = pay_store.find(pays_per_store_title).text();
 					var shortext = jQuery(this).data("name");
-					console.log(longtext); 
-					console.log(shortext);
 					
 					if(longtext.includes(shortext) == true){
 						id_store = jQuery(this).attr('id');
