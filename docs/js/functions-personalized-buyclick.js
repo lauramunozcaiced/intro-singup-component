@@ -75,7 +75,7 @@ jQuery('document').ready(function(){
 
 	var fields_exits = false;
 	
-	jQuery('.components-button.wc-block-components-button.wc-block-components-shipping-calculator-address__button').click(function(){
+	jQuery('.components-button.wc-block-components-button.wc-block-components-shipping-calculator-address__button').on('click',function(){
 		//fields_exits = false;
 		console.log('Do it!!');
 		jQuery('.store_block .wc-block-components-shipping-rates-control__package.wc-blocks-components-panel').detach();
