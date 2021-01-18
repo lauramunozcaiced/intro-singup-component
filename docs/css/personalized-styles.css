@@ -80,3 +80,7 @@
 .store_block .wc-block-components-title.wc-block-components-shipping-rates-control__package-title, .store_block ul.wc-block-components-shipping-rates-control__package-items, .store_block .wc-blocks-components-panel__button{
 	display: none;
 }
+
+fieldset.wc-block-components-totals-shipping__fieldset{
+	display: none;
+}
