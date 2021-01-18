@@ -1,4 +1,13 @@
 jQuery('document').ready(function(){
+	
+	
+	jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').each(function(){
+		var text = jQuery(this).text().replace('<span class="wcpdf-currency-symbol">','');
+		text = text.replace('</span>','');
+		
+		jQuery(this).text() = text;
+	});
+	
 	var visible_products = '.wp-block-woocommerce-cart.alignfull .wc-block-components-main tbody tr.wc-block-cart-items__row';
 	var hidden_products = '.elementor-sticky__spacer .elementor-menu-cart__products.woocommerce-mini-cart.cart.woocommerce-cart-form__contents .elementor-menu-cart__product.woocommerce-cart-form__cart-item.cart_item';
  
