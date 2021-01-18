@@ -129,14 +129,15 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 }
 
 .elementor-menu-cart__main .elementor-menu-cart__product-remove:before{
-	background-color: #6f6f6f!important;
+	background-color: #d4d4d4!important;
+	height: 2px!important;
 }
 
 .elementor-menu-cart__main .elementor-menu-cart__product-remove{
-	border-color: 2px solid #6f6f6f!important;
+	border-color: 2px solid #d4d4d4!important;
 }
 
-.elementor-menu-cart__main .elementor-menu-cart__product woocommerce-cart-form__cart-item cart_item{
+.elementor-menu-cart__main .elementor-menu-cart__product woocommerce-cart-form__cart-item.cart_item{
 	border-bottom: 1px solid #c5c5c5!important;
 }
 
