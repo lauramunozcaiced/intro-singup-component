@@ -85,7 +85,7 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 	display: none;
 }
 
-.elementor-menu-cart__main a{
+.elementor-menu-cart__main .elementor-button.elementor-button--view-cart{
 	display: flex;
 	justify-content: center;
 	align-items: center;
