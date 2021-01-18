@@ -76,3 +76,7 @@
 	transition: .5s all;
 	opacity: 0;
 }
+
+.wc-block-components-title.wc-block-components-shipping-rates-control__package-title, ul.wc-block-components-shipping-rates-control__package-items{
+	display: none;
+}
