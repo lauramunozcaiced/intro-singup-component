@@ -77,6 +77,7 @@ jQuery('document').ready(function(){
 	
 	jQuery('.wc-block-components-shipping-calculator-address').submit(function(){
 		fields_exits = false;
+		jQuery(pays_per_store).remove();
 	});
 	
 	function paymentFields(){
