@@ -1,4 +1,6 @@
 jQuery('document').ready(function(){
+	jQuery('.woocommerce-form.woocommerce-form-register.register .woocommerce-privacy-policy-text').append('<div id="privacy_policy"></div>')
+	jQuery('.woocommerce-form.woocommerce-form-register.register p:nth-child(4)').appendTo('#privacy_policy');
 	
 	jQuery('.owp-cart-overlay').append('<div class="message_add_product"><h3>Se ha agregado un producto en el carrito</h3></div>');
 	jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').each(function(){
