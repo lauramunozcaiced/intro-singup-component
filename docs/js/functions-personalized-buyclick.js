@@ -68,7 +68,7 @@ jQuery('document').ready(function(){
 		});
 	});
 	
-	//setInterval(paymentFields,1000);
+	setInterval(paymentFields,1000);
 	
 	var pays_per_store = '.wc-block-components-shipping-rates-control__package.wc-blocks-components-panel';
 	var pays_per_store_title = '.wc-block-components-title.wc-block-components-shipping-rates-control__package-title';
