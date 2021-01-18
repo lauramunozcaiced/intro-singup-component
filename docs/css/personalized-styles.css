@@ -84,3 +84,38 @@
 fieldset.wc-block-components-totals-shipping__fieldset{
 	display: none;
 }
+
+.elementor-menu-cart__main a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.elementor-menu-cart__main .elementor-menu-cart__container .widget_shopping_cart_content{
+	height: 90%;
+}
+
+.elementor-menu-cart__main .elementor-menu-cart__footer-buttons, .elementor-menu-cart__main .elementor-menu-cart__subtotal{
+	padding: 0;
+}
+
+.elementor-menu-cart__main dl.variation{
+	margin: 0;
+}
+
+.elementor-menu-cart__main dt{
+	font-size: 13px;
+    font-weight: 300;
+}
+
+.elementor-menu-cart__main .elementor-menu-cart__product-remove:before{
+	background-color: #6f6f6f;
+}
+
+.elementor-menu-cart__main .elementor-menu-cart__product-remove{
+	border-color: 2px solid #6f6f6f;
+}
+
+.elementor-menu-cart__main .elementor-menu-cart__product woocommerce-cart-form__cart-item cart_item{
+	border-bottom: 1px solid #c5c5c5;
+}
