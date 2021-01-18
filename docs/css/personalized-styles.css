@@ -5,7 +5,7 @@
 .elementor-menu-cart__container .widget_shopping_cart_content{
 	display: flex;
     flex-direction: column;
-    height: 84%;
+    height: 88%;
     justify-content: space-between;
 }
 .elementor-menu-cart__container .widget_shopping_cart_content .elementor-menu-cart__products{
