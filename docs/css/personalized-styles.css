@@ -33,6 +33,7 @@
   background: #555;
 }
 
+
 .elementor-menu-cart__close-button {
 	align-self: flex-start!important;
 }
@@ -143,4 +144,23 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 
 .elementor-menu-cart__main .elementor-menu-cart__footer-buttons a{
 	background-color: black!important;
+}
+.owp-cart-overlay{
+	background: transparent!important;
+}
+.owp-cart-overlay .message_add_product{
+	position: fixed;
+    top: 191px;
+    background: white;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    margin-right: 2rem;
+}
+
+.owp-cart-overlay .message_add_product h3{
+	margin: 0;
+	padding: 1rem;
 }
