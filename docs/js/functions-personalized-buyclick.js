@@ -76,8 +76,8 @@ jQuery('document').ready(function(){
 	var fields_exits = false;
 	
 	jQuery('.wc-block-components-shipping-calculator-address').submit(function(){
-		fields_exits = false;
-		jQuery('.store_block .wc-block-components-shipping-rates-control__package.wc-blocks-components-panel').remove();
+		//fields_exits = false;
+		jQuery('.store_block .wc-block-components-shipping-rates-control__package.wc-blocks-components-panel').detach();
 	});
 	
 	function paymentFields(){
