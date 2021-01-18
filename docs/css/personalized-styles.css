@@ -22,7 +22,7 @@
     border-top: 1px solid gray;
     justify-content: space-between;
 }
-.store_block tr.wc-block-cart-items__row td:after{
+.store_block tr.wc-block-cart-items__row td:after, .wc-blocks-components-panel.has-border:after{
     border-width: 0!important;
 }
 
@@ -45,3 +45,4 @@
 .store_block{
 	padding-top: 1.5rem;
 }
+
