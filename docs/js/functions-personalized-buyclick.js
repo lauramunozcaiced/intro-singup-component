@@ -59,6 +59,45 @@ jQuery('document').ready(function(){
 		});
 	});
 	
+	setInterval(paymentFields,1000);
+	
+	var pays_per_store = '.wc-block-components-shipping-rates-control__package.wc-blocks-components-panel';
+	var pays_per_store_title = '.wc-block-components-title.wc-block-components-shipping-rates-control__package-title';
+
+	var fields_exits = false;
+	
+	jQuery('.wc-block-components-shipping-calculator-address').submit(function(){
+		fields_exits = false;
+	});
+	
+	function paymentFields(){
+		var store = '';
+		var id_store = '';
 		
+		if(jQuery(pays_per_store).length && (jQuery('.wc-block-components-totals-shipping__fieldset').find(pays_per_store)).length){
+			fields_exits = true;
+			
+		}
+		
+		if(fields_exits == true){
+			
+			jQuery(pays_per_store).each(function(){
+				var pay_store = jQuery(this);
+				jQuery('.store_block').each(function(){
+					var longtext = pay_store.find(pays_per_store_title).text();
+					var shortext = jQuery(this).data("name");
+					console.log(longtext); 
+					console.log(shortext);
+					
+					if(longtext.includes(shortext) == true){
+						id_store = jQuery(this).attr('id');
+					}
+				});
+				jQuery(this).appendTo('#'+id_store);
+			});
+			
+			fields_exits = false;
+		}
+	}	
 	
 });
