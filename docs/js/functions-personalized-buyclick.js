@@ -75,11 +75,6 @@ jQuery('document').ready(function(){
 
 	var fields_exits = false;
 	
-	jQuery('.wc-block-components-totals-shipping__change-address-button').on('click',function(){
-		//fields_exits = false;
-		console.log('Do it!!');
-		jQuery('.store_block .wc-block-components-shipping-rates-control__package.wc-blocks-components-panel').detach();
-	});
 	
 	function paymentFields(){
 		var store = '';
@@ -102,6 +97,7 @@ jQuery('document').ready(function(){
 						id_store = jQuery(this).attr('id');
 					}
 				});
+				jQuery('#'+id_store+'.store_block .wc-block-components-shipping-rates-control__package.wc-blocks-components-panel').detach();
 				jQuery(this).appendTo('#'+id_store);
 			});
 			
