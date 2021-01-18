@@ -80,6 +80,15 @@ jQuery('document').ready(function(){
 		var store = '';
 		var id_store = '';
 		
+		if(jQuery('.owp-cart-overlay').length){
+			if(jQuery('.owp-cart-overlay').css('display') == 'block'){
+				jQuery('.owp-cart-overlay').append('<div class="message_add_product"><h3>Se ha agregado un producto en el carrito</h3></div>');
+				setTimeout(function(){
+					jQuery('.owp-cart-overlay').css('display','none');	
+				}, 3000)
+			}
+		}
+		
 		if(jQuery(pays_per_store).length && (jQuery('.wc-block-components-totals-shipping__fieldset').find(pays_per_store)).length){
 			fields_exits = true;
 			
