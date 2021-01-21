@@ -1,19 +1,48 @@
 jQuery('document').ready(function(){
-		
-	//jQuery('.woocommerce-form.woocommerce-form-register.register .woocommerce-privacy-policy-text').append('<div id="privacy_policy" style="display: flex;"><input type="checkbox" name="privacy" required></div>')
-	//jQuery('.woocommerce-form.woocommerce-form-register.register p:nth-child(4)').appendTo('#privacy_policy');
+	//1. Agrega Checkbox en el formulario de Registro:	
+	jQuery('.woocommerce-form-register.register .woocommerce-privacy-policy-text').prepend('<input type="checkbox" required style="margin-top: 5px;">');
+	//1. END
 	
+	//2. Agrega mensaje de se agregó al carrito:
 	jQuery('.owp-cart-overlay').append('<div class="message_add_product"><h3>Se ha agregado un producto en el carrito</h3></div>');
+	//2. END
+	
+	//3. Quita código incorrecto en el FINALIZAR COMPRA en los productos:
 	jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').each(function(){
 		var text = jQuery(this).text().replace('<span class="wcpdf-currency-symbol">','');
 		text = text.replace('</span>','');
 		
 		jQuery(this).text() = text;
 	});
+	//3. END
 	
-	var visible_products = '.wp-block-woocommerce-cart.alignfull .wc-block-components-main tbody tr.wc-block-cart-items__row';
-	var hidden_products = '.elementor-sticky__spacer .elementor-menu-cart__products.woocommerce-mini-cart.cart.woocommerce-cart-form__contents .elementor-menu-cart__product.woocommerce-cart-form__cart-item.cart_item';
- 
+//4. Organización del CARRITO: 
+	
+//4.1 Verifica cada 1 segundo si se organizó el carrito y si no lo manda a organizar:	
+setInterval(organizateCarrito,1000);	
+	
+var organizate_exits = false;
+	
+function organizateCarrito(){
+	if(organizate_exits == false){
+		organization();
+	}
+	
+	if(jQuery('.store_block').length){
+		organizate_exits == true;
+	}
+	
+}
+//4.1 END	
+
+//4.2 Variables: 
+var visible_products = '.wp-block-woocommerce-cart.alignfull .wc-block-components-main tbody tr.wc-block-cart-items__row';
+var hidden_products = '.elementor-sticky__spacer .elementor-menu-cart__products.woocommerce-mini-cart.cart.woocommerce-cart-form__contents .elementor-menu-cart__product.woocommerce-cart-form__cart-item.cart_item';
+//4.2 END
+
+//4.3. Función que organiz el carrito: 
+function organization(){
+//4.3.1 Busca los nombres de las tiendas y Agrega los títulos en la tabla: 
   jQuery(hidden_products).each(function(n){
 	  var exist_store = false;
 	  var hidden_product_each = jQuery(this);
@@ -30,9 +59,10 @@ jQuery('document').ready(function(){
 	  if(exist_store != true){
 		  jQuery(visible_products_tbody).append('<div id="store_'+n+'" class="store_block" data-name="'+jQuery(this).find(hidden_product_title).text()+'"><h3 class="store_title">'+jQuery(this).find('.variation a.wcfm_dashboard_item_title').text()+'</h3></div>'); 
 	  }
-	
-    	
   });
+//4.3.1 END
+	
+//4.3.2 Compara los nombres de los productos para buscar en que tienda se clasifican y organizarlos:	
     jQuery(visible_products).each(function(){
 		var store = '';
 		var id_store = '';
@@ -70,15 +100,24 @@ jQuery('document').ready(function(){
   jQuery('.store_block').css('width',jQuery('.wp-block-woocommerce-cart.alignfull table.wc-block-cart-items tbody').width());
 		});
 	});
+//4.3.2 END
+}
+//4.3 END	
+
 	
+//5. Organización del Pago por envío: 
+	
+	//5.1  Establece variable que revisa cada minuto si existe el envío:
 	setInterval(paymentFields,1000);
+	//5.1 END
 	
+	// 5.2 Variables:
 	var pays_per_store = '.wc-block-components-shipping-rates-control__package.wc-blocks-components-panel';
 	var pays_per_store_title = '.wc-block-components-title.wc-block-components-shipping-rates-control__package-title';
-
 	var fields_exits = false;
+	//5.2 END
 	
-	
+	//5.3 Función que cuando existen lo de los enviós los organiza por tienda:
 	function paymentFields(){
 		var store = '';
 		var id_store = '';
@@ -115,6 +154,7 @@ jQuery('document').ready(function(){
 			
 			fields_exits = false;
 		}
-	}	
+	}
+	//5.3 END
 	
 });
