@@ -9,7 +9,7 @@ jQuery('document').ready(function(){
 	//2. Agrega mensaje de se agregó al carrito:
 	jQuery('.owp-cart-overlay').append('<div class="message_add_product"><h3>Se ha agregado un producto en el carrito</h3></div>');
 	//2. END
-	setInterval(checkError,1000);
+	setInterval(checkError,100);
 	var error_exits = false;
 	function checkError(){
 		if(error_exits == false){ 
