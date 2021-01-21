@@ -174,6 +174,7 @@ function organization(){
 			if(jQuery(pays_per_store).length == 1){
 				jQuery('#store_0.store_block .wc-block-components-shipping-rates-control__package').detach();
 				jQuery(pays_per_store).appendTo('#store_0');
+				console.log(wcSettings);
 			}
 			else{
 			jQuery(pays_per_store).each(function(){
