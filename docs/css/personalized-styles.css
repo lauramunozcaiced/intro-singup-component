@@ -164,3 +164,7 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 	margin: 0;
 	padding: 1rem;
 }
+
+.woocommerce-form-register.register .woocommerce-privacy-policy-text{
+	display: flex;
+}
