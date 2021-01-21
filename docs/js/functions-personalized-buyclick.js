@@ -8,12 +8,26 @@ jQuery('document').ready(function(){
 	//2. END
 	
 	//3. Quita código incorrecto en el FINALIZAR COMPRA en los productos:
-	jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').each(function(){
+	setInterval(cleanSpan,1000);	
+	
+var clean_span = false;
+	
+function cleanSpan(){
+	if(clean_span == false){
+		jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').each(function(){
 		var text = jQuery(this).text().replace('<span class="wcpdf-currency-symbol">','');
 		text = text.replace('</span>','');
 		
 		jQuery(this).text() = text;
 	});
+	}
+	
+	if(jQuery('.store_block').length > 0){
+		clean_span = true;
+	}
+	
+}
+	
 	//3. END
 	
 //4. Organización del CARRITO: 
