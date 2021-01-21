@@ -25,11 +25,10 @@ var organizate_exits = false;
 	
 function organizateCarrito(){
 	if(organizate_exits == false){
-		console.log(jQuery('.store_block').length);
 		organization();
 	}
 	
-	if(jQuery('.store_block').length){
+	if(jQuery('.store_block').length > 0){
 		organizate_exits == true;
 	}
 	
