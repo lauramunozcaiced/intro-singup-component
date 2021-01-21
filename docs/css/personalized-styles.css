@@ -98,7 +98,7 @@
 	opacity: 0;
 }
 
-.store_block .wc-block-components-title.wc-block-components-shipping-rates-control__package-title, .store_block ul.wc-block-components-shipping-rates-control__package-items, .store_block .wc-blocks-components-panel__button{
+.store_block ul.wc-block-components-shipping-rates-control__package-items, .store_block .wc-blocks-components-panel__button{
 	display: none;
 }
 
@@ -151,13 +151,15 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 .owp-cart-overlay .message_add_product{
 	position: fixed;
     top: 191px;
-    background: white;
-    border: 1px solid;
+    background: #eaddca;
+    border: 3px solid orange;
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 0;
-    margin-right: 2rem;
+    border-radius: 6px;
+    right: -100%;
+    margin-right: 5%;
+    transition: all .5s;
 }
 
 .owp-cart-overlay .message_add_product h3{
