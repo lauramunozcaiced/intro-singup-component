@@ -170,7 +170,7 @@ function organization(){
 						id_store = jQuery(this).attr('id');
 					}
 				});
-				jQuery('#'+id_store+'.store_block .wc-block-components-shipping-rates-control__package.wc-blocks-components-panel').detach();
+				jQuery('#'+id_store+'.store_block .wc-block-components-shipping-rates-control__package').detach();
 				jQuery(this).appendTo('#'+id_store);
 				
 			});
