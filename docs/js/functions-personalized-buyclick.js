@@ -125,9 +125,15 @@ function organization(){
 		
 		if(jQuery('.owp-cart-overlay').length){
 			if(jQuery('.owp-cart-overlay').css('display') == 'block'){
+				jQuery('.owp-cart-overlay .message_add_product').addClass('show_anim');
 				setTimeout(function(){
-					jQuery('.owp-cart-overlay').css('display','none');	
-				}, 5000)
+					jQuery('.owp-cart-overlay .message_add_product').removeClass('show_anim');
+					
+				}, 7000)
+				setTimeout(function(){
+					jQuery('.owp-cart-overlay').css('display','none');
+					
+				}, 9000)
 			}
 		}
 		
