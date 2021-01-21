@@ -24,12 +24,13 @@ setInterval(organizateCarrito,1000);
 var organizate_exits = false;
 	
 function organizateCarrito(){
+	console.log(organizate_exits);
 	if(organizate_exits == false){
 		organization();
 	}
 	
 	if(jQuery('.store_block').length > 0){
-		organizate_exits == true;
+		organizate_exits = true;
 	}
 	
 }
