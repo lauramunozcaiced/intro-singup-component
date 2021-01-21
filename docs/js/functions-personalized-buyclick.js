@@ -25,6 +25,7 @@ var organizate_exits = false;
 	
 function organizateCarrito(){
 	if(organizate_exits == false){
+		console.log(jQuery('.store_block').length);
 		organization();
 	}
 	
