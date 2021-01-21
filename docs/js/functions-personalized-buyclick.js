@@ -129,7 +129,7 @@ function organization(){
 	//5.1 END
 	
 	// 5.2 Variables:
-	var pays_per_store = '.wc-block-components-shipping-rates-control__package.wc-blocks-components-panel';
+	var pays_per_store = '.wc-block-components-shipping-rates-control__package';
 	var pays_per_store_title = '.wc-block-components-title.wc-block-components-shipping-rates-control__package-title';
 	var fields_exits = false;
 	//5.2 END
