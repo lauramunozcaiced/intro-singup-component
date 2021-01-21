@@ -162,7 +162,7 @@ fieldset.wc-block-components-totals-shipping__fieldset{
     transition: all .5s;
 }
 
-.owp-cart-overlay .message_add_product:show-anim{
+.owp-cart-overlay .message_add_product.show-anim{
 	right: 0;
 }
 
