@@ -1,4 +1,7 @@
 jQuery('document').ready(function(){
+	setTimeout(function(){
+	jQuery('.wc-block-components-sidebar-layout.wc-block-cart').css('opacity','1');
+	},2000);
 	//1. Agrega Checkbox en el formulario de Registro:	
 	jQuery('.woocommerce-form-register.register .woocommerce-privacy-policy-text').prepend('<input type="checkbox" required style="margin-top: 5px;">');
 	//1. END
@@ -21,8 +24,7 @@ function cleanSpan(){
 		jQuery(this).text() = text;
 	});
 	}
-	
-	if(jQuery('.store_block').length > 0){
+	if(jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').text().includes('<span class="wcpdf-currency-symbol">') == true){
 		clean_span = true;
 	}
 	
