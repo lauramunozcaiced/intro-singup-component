@@ -171,7 +171,11 @@ function organization(){
 		}
 		
 		if(fields_exits == true){
-			
+			if(jQuery(pays_per_store).length == 1){
+				jQuery('#store_0.store_block .wc-block-components-shipping-rates-control__package').detach();
+				jQuery(pays_per_store).appendTo('#store_0');
+			}
+			else{
 			jQuery(pays_per_store).each(function(){
 				var pay_store = jQuery(this);
 				jQuery('.store_block').each(function(){
@@ -182,11 +186,11 @@ function organization(){
 						id_store = jQuery(this).attr('id');
 					}
 				});
-				//jQuery('#'+id_store+'.store_block .wc-block-components-shipping-rates-control__package').detach();
+				jQuery('#'+id_store+'.store_block .wc-block-components-shipping-rates-control__package').detach();
 				jQuery(this).appendTo('#'+id_store);
 				
 			});
-			
+			}
 			fields_exits = false;
 		}
 	}
