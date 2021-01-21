@@ -14,6 +14,7 @@ jQuery('document').ready(function(){
 	function checkError(){
 		if(error_exits == false){ 
 		if(jQuery('.wp-block-woocommerce-cart .wc-block-error.wc-block-components-error').length > 0){
+			jQuery('.wp-block-woocommerce-cart .wc-block-error.wc-block-components-error').css('display','none');
 			 location.reload();
 			error_exits = true;
 		}
