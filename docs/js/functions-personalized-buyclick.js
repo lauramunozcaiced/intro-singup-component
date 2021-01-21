@@ -9,6 +9,17 @@ jQuery('document').ready(function(){
 	//2. Agrega mensaje de se agregó al carrito:
 	jQuery('.owp-cart-overlay').append('<div class="message_add_product"><h3>Se ha agregado un producto en el carrito</h3></div>');
 	//2. END
+	setInterval(checkError,1000);
+	var error_exits = false;
+	function checkError(){
+		if(error_exits == false){ 
+		if(jQuery('.wp-block-woocommerce-cart .wc-block-error.wc-block-components-error').length > 0){
+			 location.reload();
+			error_exits = true;
+		}
+		}
+	}
+	 
 	
 	//3. Quita código incorrecto en el FINALIZAR COMPRA en los productos:
 	setInterval(cleanSpan,1000);	
