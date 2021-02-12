@@ -176,3 +176,13 @@ fieldset.wc-block-components-totals-shipping__fieldset{
     border: none!important;
     cursor: not-allowed!important;
 }
+
+#politics-box{
+	padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+#politics-box a{
+	font-weight: 700;
+	text-decoration: underline;
+}
