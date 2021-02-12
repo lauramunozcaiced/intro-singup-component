@@ -29,21 +29,15 @@ jQuery('document').ready(function(){
 	//3. Quita código incorrecto en el FINALIZAR COMPRA en los productos:
 	setInterval(cleanSpan,1000);	
 	
-var clean_span = false;
-	
 function cleanSpan(){
-	if(clean_span == false){
 		jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').each(function(){
-		var text = jQuery(this).text().replace('<span class="wcpdf-currency-symbol">','');
-		text = text.replace('</span>','');
+			if(jQuery(this).text().includes('<span') == true){
+				var text = jQuery(this).text().replace('<span class="wcpdf-currency-symbol">','');
+				text = text.replace('</span>','');
 		
-		jQuery(this).text() = text;
-	});
-	}
-	if(jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').text().includes('<span class="wcpdf-currency-symbol">') == false){
-		
-	}
-	
+				jQuery(this).text() = text;
+			}
+	});	
 }
 	
 	//3. END
@@ -56,7 +50,6 @@ setInterval(organizateCarrito,1000);
 var organizate_exits = false;
 	
 function organizateCarrito(){
-	console.log(organizate_exits);
 	if(organizate_exits == false){
 		organization();
 	}
