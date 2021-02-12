@@ -1,6 +1,6 @@
 jQuery('document').ready(function(){
 	
-	jQuery('.wc-block-components-main.wc-block-checkout__main .wc-block-checkout__actions').prepend('<div class="form-group"><input type="checkbox" required name="politics" id="politics"><label for="politics">Aceptar las <a href="https://buyclick.es/politica-privacidad_aviso-legal/" target="_blank">Políticas de Privacidad</a> y los <a href="https://buyclick.es/terminos-condiciones/" target="_blank">Términos y condiciones</a> </label><small>*Al finalizar esta compra con el botón de Realizar Pedido, usted acepta las Políticas de Privacidad y lo Terminos y Condiciones.</small></div>');
+	jQuery('.wc-block-components-main.wc-block-checkout__main .wc-block-checkout__actions').prepend('<div id="politics-box" class="form-group"><input type="checkbox" required name="politics" id="politics"><label for="politics">Aceptar las <a href="https://buyclick.es/politica-privacidad_aviso-legal/" target="_blank">Políticas de Privacidad</a> y los <a href="https://buyclick.es/terminos-condiciones/" target="_blank">Términos y condiciones</a> </label><br><small><strong>Importante: </strong>Al finalizar esta compra con el botón de Realizar Pedido, usted acepta las Políticas de Privacidad y lo Terminos y Condiciones.</small></div>');
 	
 	jQuery('.wc-block-components-main.wc-block-checkout__main .wc-block-checkout__actions .components-button.wc-block-components-button.wc-block-components-checkout-place-order-button').prop('disabled', true);
 	
