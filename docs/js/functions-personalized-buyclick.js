@@ -1,4 +1,8 @@
 jQuery('document').ready(function(){
+	
+	jQuery('.wc-block-components-form.wc-block-checkout__form .wc-block-checkout__actions').prepend('<div class="form-group"><label for="politics">Aceptar las <a href="https://buyclick.es/politica-privacidad_aviso-legal/" target="_blank">Políticas de Privacidad</a></label><input type="checkbox" required name="politics" id="politics"></div>');
+	
+	
 	setTimeout(function(){
 	jQuery('.wc-block-components-sidebar-layout.wc-block-cart').css('opacity','1');
 	},2000);
