@@ -37,7 +37,7 @@ function cleanSpan(){
 	});
 	}
 	if(jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').text().includes('<span class="wcpdf-currency-symbol">') == false){
-		clean_span = true;
+		
 	}
 	
 }
