@@ -68,10 +68,10 @@
 	padding-top: 1.5rem;
 }
 @media (min-width: 778px){
-	.wc-block-components-main.wc-block-cart__main{
+	/*.wc-block-components-main.wc-block-cart__main{
 		height: 60vh;
 		overflow: auto;
-	}
+	}*/
 	/* width */
 .wc-block-components-main.wc-block-cart__main::-webkit-scrollbar {
   width: 10px;
