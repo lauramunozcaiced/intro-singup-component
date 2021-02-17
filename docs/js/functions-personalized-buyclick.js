@@ -39,7 +39,7 @@ jQuery('document').ready(function(){
 	setInterval(cleanSpan,1000);	
 	
 function cleanSpan(){
-		jQuery('.wc-block-components-order-summary-item .wc-block-components-order-summary-item__total-price').each(function(){
+		jQuery('.wc-block-components-order-summary-item *').each(function(){
 			if(jQuery(this).text().includes('<span') == true){
 				var text = jQuery(this).text().replace('<span class="wcpdf-currency-symbol">','');
 				text = text.replace('</span>','');
