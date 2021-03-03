@@ -172,7 +172,7 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 }
 
 .wc-block-components-main.wc-block-checkout__main .wc-block-checkout__actions a{
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 .wc-block-components-main.wc-block-checkout__main .wc-block-checkout__actions{
 	flex-direction: column;
@@ -187,7 +187,7 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 
 #politics-box{
 	padding-top: 5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 
 #politics-box a{
