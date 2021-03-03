@@ -10,6 +10,7 @@ jQuery('document').ready(function(){
 		}else{
 			jQuery('.wc-block-components-main.wc-block-checkout__main .wc-block-checkout__actions .components-button.wc-block-components-button.wc-block-components-checkout-place-order-button').prop('disabled', true);
 		}
+		
 	});
 	
 	setTimeout(function(){
@@ -130,10 +131,10 @@ function organization(){
 		});
 		
 		jQuery(this).appendTo('#'+id_store);
-		jQuery('.store_block').css('width',jQuery('.wp-block-woocommerce-cart.alignfull table.wc-block-cart-items tbody').width());
-		jQuery( window ).resize(function() {
+		jQuery('.store_block').css('width','100%');
+		/*jQuery( window ).resize(function() {
   jQuery('.store_block').css('width',jQuery('.wp-block-woocommerce-cart.alignfull table.wc-block-cart-items tbody').width());
-		});
+		});*/
 	});
 //4.3.2 END
 }
