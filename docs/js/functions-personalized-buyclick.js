@@ -93,7 +93,7 @@ function organization(){
 		  });
 	  }
 	  if(exist_store != true){
-		  jQuery(visible_products_tbody).append('<div id="store_'+n+'" class="store_block" data-name="'+jQuery(this).find(hidden_product_title).text()+'"><h3 class="store_title">'+jQuery(this).find('.variation a.wcfm_dashboard_item_title').text()+'</h3></div>'); 
+		  jQuery(visible_products_tbody).append('<tr id="store_'+n+'" class="store_block" data-name="'+jQuery(this).find(hidden_product_title).text()+'"><div><h3 class="store_title">'+jQuery(this).find('.variation a.wcfm_dashboard_item_title').text()+'</h3></div></tr>'); 
 	  }
   });
 //4.3.1 END
