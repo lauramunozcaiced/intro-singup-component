@@ -176,7 +176,7 @@ fieldset.wc-block-components-totals-shipping__fieldset{
 }
 .wc-block-components-main.wc-block-checkout__main .wc-block-checkout__actions{
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: flex-start;
 }
 
 .wc-block-components-main.wc-block-checkout__main .wc-block-checkout__actions .components-button.wc-block-components-button.wc-block-components-checkout-place-order-button:disabled {
