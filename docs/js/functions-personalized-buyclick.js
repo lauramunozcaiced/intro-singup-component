@@ -93,7 +93,7 @@ function organization(){
 		  });
 	  }
 	  if(exist_store != true){
-		  jQuery(visible_products_tbody).append('<tr id="store_'+n+'" class="store_block" data-name="'+jQuery(this).find(hidden_product_title).text()+'"><div><h3 class="store_title">'+jQuery(this).find('.variation a.wcfm_dashboard_item_title').text()+'</h3></div></tr>'); 
+		  jQuery(visible_products_tbody).append('<tr id="store_'+n+'" class="store_block" data-name="'+jQuery(this).find(hidden_product_title).text()+'"><div class="content"><h3 class="store_title">'+jQuery(this).find('.variation a.wcfm_dashboard_item_title').text()+'</h3></div></tr>'); 
 	  }
   });
 //4.3.1 END
@@ -130,7 +130,7 @@ function organization(){
 			}
 		});
 		
-		jQuery(this).appendTo('#'+id_store+' div');
+		jQuery(this).appendTo('#'+id_store+' .content');
 		jQuery('.store_block').css('width','100%');
 		/*jQuery( window ).resize(function() {
   jQuery('.store_block').css('width',jQuery('.wp-block-woocommerce-cart.alignfull table.wc-block-cart-items tbody').width());
@@ -180,7 +180,7 @@ function organization(){
 		if(fields_exits == true){
 			if(jQuery(pays_per_store).length == 1){
 				jQuery('#store_0.store_block .wc-block-components-shipping-rates-control__package').detach();
-				jQuery(pays_per_store).appendTo('#store_0');
+				jQuery(pays_per_store).appendTo('#store_0 .content');
 				console.log(wcSettings);
 			}
 			else{
@@ -195,7 +195,7 @@ function organization(){
 					}
 				});
 				jQuery('#'+id_store+'.store_block .wc-block-components-shipping-rates-control__package').detach();
-				jQuery(this).appendTo('#'+id_store);
+				jQuery(this).appendTo('#'+id_store+' .content');
 				
 			});
 			}
