@@ -62,7 +62,7 @@
 }
 
 .store_block tr.wc-block-cart-items__row .wc-block-cart-item__product{
-	max-width: 320px;
+	width: 75%;
 }
 .store_block tr.wc-block-cart-items__row .wc-block-cart-item__quantity, .store_block tr.wc-block-cart-items__row .wc-block-cart-item__total{
 	max-width: 120px;
