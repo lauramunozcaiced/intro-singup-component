@@ -131,7 +131,7 @@ function organization(){
 		});
 		
 		jQuery(this).appendTo('#'+id_store);
-		jQuery('.store_block').css('width','100%');
+		jQuery('.store_block').css('width',jQuery('.wp-block-woocommerce-cart.alignfull table.wc-block-cart-items tbody').width());
 		jQuery( window ).resize(function() {
   jQuery('.store_block').css('width',jQuery('.wp-block-woocommerce-cart.alignfull table.wc-block-cart-items tbody').width());
 		});
