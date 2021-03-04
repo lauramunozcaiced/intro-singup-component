@@ -48,15 +48,14 @@
 }
 
 .store_block tr.wc-block-cart-items__row .wc-block-cart-item__image{
-	width: 110px!important;
+	max-width: 110px!important;
 	
 }
 
 .store_block tr.wc-block-cart-items__row .wc-block-cart-item__product{
-	width: 320px;
+	max-width: 320px;
 }
 .store_block tr.wc-block-cart-items__row .wc-block-cart-item__quantity, .store_block tr.wc-block-cart-items__row .wc-block-cart-item__total{
-	width: 120px;
 	max-width: 120px;
 }
 
